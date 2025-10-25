@@ -2,23 +2,19 @@
 
 customer-churn-mlops-pipeline/
 │
-├── main_pipeline.py
-├── data_ingestion/
-│   ├── __init__.py
-│   └── ingestion.py
-├── data_validation/
-│   ├── __init__.py
-│   └── validation.py
-├── data_preparation/
-│   ├── __init__.py
-│   └── preparation.py
-├── build_model/
-│   ├── __init__.py
-│   └── model.py
-├── feature_store/
-│   ├── __init__.py
-│   └── store.py
-├── logs/
-│   └── (will be auto-created by the code)
-├── requirements.txt
-└── README.md
+├── data/
+│   ├── raw_data_storage/              # Raw data before processing
+│   ├── data_ingestion/                # Data ingestion scripts
+│   ├── data_validation/               # Data validation and schema checks
+│   ├── data_preparation/              # Cleaning and preprocessing
+│   ├── data_transformation_storage/   # Feature engineering and transformation
+│   ├── data_versioning/               # DVC integration for version control
+│   └── feature_store/                 # SQLite/Feature store database
+│
+├── build_model/                       # Model training, evaluation, and storage
+├── reports/                           # Model metrics and performance reports
+├── logs/                              # Log files for each pipeline stage
+├── main_pipeline.py                   # Main orchestrator script
+├── requirements.txt                   # Dependencies
+└── README.md                          # Project documentation
+
