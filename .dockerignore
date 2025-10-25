@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.log
+*.dvc
+.venv/
+venv/
+data/
+logs/
+reports/
+.git/
+.gitignore

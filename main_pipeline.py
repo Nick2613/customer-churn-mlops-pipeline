@@ -15,15 +15,9 @@ Pipeline Steps:
 7. Feature Store (Step 7) - Manage engineered features
 8. Data Versioning (Step 8) - Version control for datasets
 9. Model Training (Step 9) - Train a custom model
-
-Usage:
-    python main_pipeline.py
 """
 
 import sys
-
-# Add src directory to path
-# sys.path.append('src') # Removed as it is not needed when running in Colab
 
 # Import pipeline components
 from data_ingestion import DataIngestionPipeline
@@ -33,7 +27,6 @@ from data_preparation import DataPreparationPipeline
 from data_transformation_storage import DataTransformationStorage
 from feature_store import SimpleChurnFeatureStore
 from data_versioning import version_pipeline_step
-from build_model import TrainCustomModel
 
 
 def run_data_ingestion_steps():
@@ -93,18 +86,26 @@ def run_transformation_steps():
     return transformation_result, transformed_version_tag, populate_result, feature_store
 
 
+# ✅ --- UPDATED SECTION: Model Training with Kaggle Dataset ---
 def run_model_training():
-    """Run model training step"""
-    print("Step 9: Starting model training pipeline....")
+    """Run model training step using Kaggle Churn dataset"""
+    print("Step 9: Running model training on Telco Customer Churn dataset...")
+
     try:
-        model_builder = TrainCustomModel()
-        # Use the latest processed data instead of raw data
-        model_builder.train_model(model_type="logistic_regression")
+        # Import your working modules
+        from data_ingestion.data_ingestion import ingest_data
+        from build_model.build_model import build_and_train_model
+
+        # Run ingestion + training
+        data_path = ingest_data()
+        acc = build_and_train_model(data_path)
+
+        print(f"✅ Model trained successfully! Accuracy: {acc:.3f}")
         return True
-    except FileNotFoundError as e:
-        print(f"Model training error: {str(e)}")
-        print("Continuing pipeline without model training...")
+    except Exception as e:
+        print(f"❌ Model training failed: {str(e)}")
         return False
+# ✅ --- END UPDATED SECTION ---
 
 
 def main():
@@ -124,7 +125,7 @@ def main():
             "Complete pipeline with all processed data"
         )
 
-        # Run model training (optional)
+        # Run model training
         model_success = run_model_training()
 
         # Print results

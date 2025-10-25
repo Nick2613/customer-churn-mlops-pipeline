@@ -1,0 +1,37 @@
+2025-10-25 18:47:46,382 [ERROR] ❌ Data ingestion failed: Dataset not found at data/raw_data_storage/WA_Fn-UseC_-Telco-Customer-Churn.csv
+2025-10-25 18:50:19,462 [INFO] ✅ Data loaded successfully with shape (7043, 21)
+2025-10-25 18:50:19,509 [INFO] 📁 Data saved to data/data_ingestion/ingested_data.csv
+2025-10-25 18:50:19,527 [INFO] ✅ Data for model loaded: (7043, 21)
+2025-10-25 18:50:20,260 [INFO] ✅ Model trained successfully with accuracy: 0.7846
+2025-10-25 18:50:20,269 [INFO] Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.82      0.90      0.86      1033
+           1       0.63      0.45      0.53       374
+
+    accuracy                           0.78      1407
+   macro avg       0.73      0.68      0.69      1407
+weighted avg       0.77      0.78      0.77      1407
+
+2025-10-25 18:50:20,273 [INFO] Confusion Matrix:
+[[934  99]
+ [204 170]]
+2025-10-25 18:50:20,309 [INFO] 💾 Model saved successfully.
+2025-10-25 20:02:35,188 [INFO] ✅ Data loaded successfully with shape (7043, 21)
+2025-10-25 20:02:35,241 [INFO] 📁 Data saved to data/data_ingestion/ingested_data.csv
+2025-10-25 20:02:35,259 [INFO] ✅ Data for model loaded: (7043, 21)
+2025-10-25 20:02:35,997 [INFO] ✅ Model trained successfully with accuracy: 0.7846
+2025-10-25 20:02:36,004 [INFO] Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.82      0.90      0.86      1033
+           1       0.63      0.45      0.53       374
+
+    accuracy                           0.78      1407
+   macro avg       0.73      0.68      0.69      1407
+weighted avg       0.77      0.78      0.77      1407
+
+2025-10-25 20:02:36,005 [INFO] Confusion Matrix:
+[[934  99]
+ [204 170]]
+2025-10-25 20:02:36,055 [INFO] 💾 Model saved successfully.
