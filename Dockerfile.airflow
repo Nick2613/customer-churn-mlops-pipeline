@@ -1,0 +1,25 @@
+FROM apache/airflow:2.8.4-python3.11
+
+# Set working directory
+WORKDIR /opt/airflow
+
+# Copy Airflow-specific requirements
+COPY requirements_airflow.txt .
+
+# Install dependencies (prebuilt wheels)
+RUN pip install --no-cache-dir --prefer-binary -r requirements_airflow.txt
+
+# Copy DAGs and main pipeline
+COPY dags ./dags
+COPY main_pipeline.py /opt/airflow/
+
+# Environment variables
+ENV AIRFLOW_HOME=/opt/airflow
+ENV AIRFLOW__CORE__LOAD_EXAMPLES=False
+
+# Make sure Airflow webserver listens on 0.0.0.0 for Codespaces
+CMD ["bash", "-c", "\
+    airflow db init && \
+    airflow users create --username admin --password admin --firstname Admin --lastname User --role Admin --email admin@example.com || true && \
+    airflow webserver --host 0.0.0.0 --port 8080 & \
+    airflow scheduler"]

@@ -1,0 +1,38 @@
+# --- Core ML Pipeline Requirements ---
+
+# Data Processing
+numpy>=1.21.6,<2.0.0
+pandas>=2.0.0
+scipy>=1.11.0
+
+# Machine Learning
+scikit-learn>=1.3.0
+joblib>=1.3.2
+mlflow
+
+# Visualization
+matplotlib==3.8.4
+seaborn>=0.13.2
+
+# Web Requests
+requests>=2.32.3
+
+# Feature Store & Utilities
+pyyaml>=6.0.2
+python-dateutil>=2.9.0.post0
+tqdm>=4.66.5
+
+# Logging and Monitoring
+colorlog>=6.8.2
+
+# File Operations
+pathlib2>=2.3.7.post1
+
+# Environment and Configuration
+python-dotenv>=1.0.1
+
+# Database Support
+sqlalchemy>=2.0.0
+
+# Data Validation
+openpyxl>=3.1.5

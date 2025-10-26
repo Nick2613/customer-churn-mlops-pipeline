@@ -35,3 +35,93 @@ weighted avg       0.77      0.78      0.77      1407
 [[934  99]
  [204 170]]
 2025-10-25 20:02:36,055 [INFO] 💾 Model saved successfully.
+2025-10-26 10:26:43,771 [INFO] ✅ Data loaded successfully with shape (7043, 21)
+2025-10-26 10:26:43,816 [INFO] 📁 Data saved to data/data_ingestion/ingested_data.csv
+2025-10-26 10:26:43,842 [INFO] ✅ Data for model loaded: (7043, 21)
+2025-10-26 10:26:44,608 [INFO] ✅ Model trained successfully with accuracy: 0.7846
+2025-10-26 10:26:44,621 [INFO] Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.82      0.90      0.86      1033
+           1       0.63      0.45      0.53       374
+
+    accuracy                           0.78      1407
+   macro avg       0.73      0.68      0.69      1407
+weighted avg       0.77      0.78      0.77      1407
+
+2025-10-26 10:26:44,623 [INFO] Confusion Matrix:
+[[934  99]
+ [204 170]]
+2025-10-26 10:26:44,684 [INFO] 💾 Model saved successfully.
+2025-10-26 10:33:51,524 [INFO] ✅ Data loaded successfully with shape (7043, 21)
+2025-10-26 10:33:51,605 [INFO] 📁 Data saved to data/data_ingestion/ingested_data.csv
+2025-10-26 10:33:51,634 [INFO] ✅ Data for model loaded: (7043, 21)
+2025-10-26 10:33:53,539 [INFO] ✅ Model trained successfully with accuracy: 0.7846
+2025-10-26 10:33:53,560 [INFO] Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.82      0.90      0.86      1033
+           1       0.63      0.45      0.53       374
+
+    accuracy                           0.78      1407
+   macro avg       0.73      0.68      0.69      1407
+weighted avg       0.77      0.78      0.77      1407
+
+2025-10-26 10:33:53,564 [INFO] Confusion Matrix:
+[[934  99]
+ [204 170]]
+2025-10-26 10:33:53,646 [INFO] 💾 Model saved successfully.
+2025-10-26 10:51:06,788 [INFO] ✅ Data loaded successfully with shape (7043, 21)
+2025-10-26 10:51:06,829 [INFO] 📁 Data saved to data/data_ingestion/ingested_data.csv
+2025-10-26 10:51:06,847 [INFO] ✅ Data for model loaded: (7043, 21)
+2025-10-26 10:51:07,577 [INFO] ✅ Model trained successfully with accuracy: 0.7846
+2025-10-26 10:51:07,584 [INFO] Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.82      0.90      0.86      1033
+           1       0.63      0.45      0.53       374
+
+    accuracy                           0.78      1407
+   macro avg       0.73      0.68      0.69      1407
+weighted avg       0.77      0.78      0.77      1407
+
+2025-10-26 10:51:07,588 [INFO] Confusion Matrix:
+[[934  99]
+ [204 170]]
+2025-10-26 10:51:07,634 [INFO] 💾 Model saved successfully.
+2025-10-26 11:08:37,104 [INFO] ✅ Data loaded successfully with shape (7043, 21)
+2025-10-26 11:08:37,145 [INFO] 📁 Data saved to data/data_ingestion/ingested_data.csv
+2025-10-26 11:08:37,163 [INFO] ✅ Data for model loaded: (7043, 21)
+2025-10-26 11:08:37,916 [INFO] ✅ Model trained successfully with accuracy: 0.7846
+2025-10-26 11:08:37,926 [INFO] Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.82      0.90      0.86      1033
+           1       0.63      0.45      0.53       374
+
+    accuracy                           0.78      1407
+   macro avg       0.73      0.68      0.69      1407
+weighted avg       0.77      0.78      0.77      1407
+
+2025-10-26 11:08:37,928 [INFO] Confusion Matrix:
+[[934  99]
+ [204 170]]
+2025-10-26 11:08:37,992 [INFO] 💾 Model saved successfully.
+2025-10-26 11:12:52,286 [INFO] ✅ Data loaded successfully with shape (7043, 21)
+2025-10-26 11:12:52,329 [INFO] 📁 Data saved to data/data_ingestion/ingested_data.csv
+2025-10-26 11:12:52,346 [INFO] ✅ Data for model loaded: (7043, 21)
+2025-10-26 11:12:53,131 [INFO] ✅ Model trained successfully with accuracy: 0.7846
+2025-10-26 11:12:53,137 [INFO] Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.82      0.90      0.86      1033
+           1       0.63      0.45      0.53       374
+
+    accuracy                           0.78      1407
+   macro avg       0.73      0.68      0.69      1407
+weighted avg       0.77      0.78      0.77      1407
+
+2025-10-26 11:12:53,141 [INFO] Confusion Matrix:
+[[934  99]
+ [204 170]]
+2025-10-26 11:12:53,183 [INFO] 💾 Model saved successfully.
